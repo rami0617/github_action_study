@@ -5,7 +5,11 @@ describe("function factorial", () => {
     expect(factorial(3)).toEqual(6);
   });
 
-  it("error", () => {
+  it("factorial2", () => {
     expect(factorial(5)).toEqual(120);
+  });
+
+  it("factorial3", () => {
+    expect(factorial(5)).toEqual(1);
   });
 });
