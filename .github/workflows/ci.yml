@@ -3,16 +3,12 @@
 
 name: Example CI
 
-//event 등록
-//main branch에 push나 pull request가 실행되면
-
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
-//job에 있는걸 해줌
 
 jobs:
   test:
