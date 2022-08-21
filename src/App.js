@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import react, { useState } from "react";
+import Parent from "./Parent";
 
 function App() {
+  // const initialState = {
+  //   firstName: "yatong",
+  //   lastName: "ha",
+  // };
+  // const [person, setPerson] = useState(initialState);
+  // const changeName = () => {
+  // person.firstName = "zzon";
+  // person.lastName = "ddeok";
+  // setPerson(person);
+  //변경안됨
+
+  //   const newCat = { ...person };
+  //   newCat.firstName = "zzon";
+  //   newCat.lastName = "ddeok";
+  //   setPerson(newCat); //컴포넌트 렌더링됨
+  // };
+
+  console.log("App rendered");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <div onClick={changeName}>
+        {person.firstName} {person.lastName}
+      </div> */}
+      <Parent />
     </div>
   );
 }
